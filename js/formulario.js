@@ -73,10 +73,8 @@ document.getElementById("btnFiltrar").addEventListener("click", () => {
 //promedio
 function calcularPromedioMiedo() {
     const totalMiedo = listaMonstruos.reduce((sum, mons) => sum + mons.miedo, 0);
-    const promedioMiedo = totalMiedo / listaMonstruos.length;
-
-    // Mostrar el promedio en el input de solo lectura
-    document.getElementById("promedioMiedo").value = promedioMiedo.toFixed(2); // Ajusta el número de decimales según tus preferencias
+    const promedioMiedo = totalMiedo / listaMonstruos.length;   
+    document.getElementById("promedioMiedo").value = promedioMiedo.toFixed(2); 
 }
 
 $formulario.addEventListener("submit", async (e) => {
