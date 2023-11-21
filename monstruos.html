@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleMonstruo.css">
+    <link rel="icon" type="image/jpg" href="img/calabaza.png">
+    <script src="./js/formulario.js" type="module" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <title>HALLOWEEN</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+ 
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          
+          <a class="navbar-brand"  href="index.html">  <img src="img/calabaza.png" alt="logo" width="50px"> HALLOWEEN  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="monstruos.html">Monstruos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>    
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>   
+
+            </ul>
+
+          </div>
+        </div>
+    </nav>
+
+    <main>
+        <h1 class="info">Informacion Monstruos</h1>
+        <div id="contenedorMonstruos" ></div>
+        
+    </main>
+
+
+    <footer>
+        <div id="contenidofooter">
+            <!-- logo footer -->
+            <a href="index.html" id="logo-footer">
+                <img src="img/calabaza.png" alt="Logo">
+                HALLOWEEN
+            </a>
+
+            <p>Laboratorio III - 2023</p>
+
+            <div>
+
+                <a href="https://www.instagram.com/" target="_blank">
+                 <img src="img/instagram-w.png" alt="instagram">
+                </a>
+                <a href="https://chat.whatsapp.com/" target="_blank"> <!-- abre al whatsapp -->
+                  <img src="img/whatsapp.png" alt="logo whatsapp">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/monstruos.js"></script>
+
+    <!-- <script>
+        
+        // Obtén los monstruos del localStorage
+        const listaMonstruos = JSON.parse(localStorage.getItem("listaMonstruos")) || [];
+        console.log(localStorage.getItem("listaMonstruos"));
+        // Obtén el contenedor de monstruos
+        const contenedorMonstruos = document.getElementById("contenedorMonstruos");
+        
+        // Crea tarjetas para cada monstruo y agrégales al contenedor
+        listaMonstruos.forEach((monstruo) => {
+            const tarjeta = document.createElement("div");
+            tarjeta.classList.add("card", "m-2", "text-center");
+            tarjeta.innerHTML = `
+            <div class="card-header">${monstruo.nombre}</div>
+            <div class="card-body">
+                <p class="card-text">alias: ${monstruo.alias}</p>
+                <p class="card-text">defensa: ${monstruo.defensa}</p>
+                <p class="card-text">miedo: ${monstruo.miedo}</p>
+                <p class="card-text">tipo: ${monstruo.tipo}</p>
+                </div>
+                `;
+                contenedorMonstruos.appendChild(tarjeta);
+            });
+            // console.log(monstruos);
+    </script> -->
+
+    
+</body>
+</html>

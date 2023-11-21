@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    background-image: url(../img/fondo1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    padding: 16px;
+    background-color: #1c0326f0;
+    z-index: 2;
+}
+
+header a img {
+    width: 70px;
+    vertical-align: middle;
+    margin-right: 16px;
+    font-size: 20px;
+}
+
+header a {
+    color: #49c935;
+    font-weight: 3000;
+}
+
+.navbar a {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background: #d147f468;
+}
+
+.info{
+    color: #49c935;
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 50px; 
+    text-align: center;
+    }
+
+#contenedorMonstruos {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    margin-top: 100px;    
+}
+
+.monstruo-card {        
+    border-radius: 8px;
+    border-color: black;
+    width: 30%;
+    margin: 20px; /* Ajusta el espacio entre las tarjetas */
+    text-align: center; /* Centra el contenido dentro de cada tarjeta */
+}
+
+.monstruo-card .card-body {
+    background-color: rgb(0, 0, 0);
+    color: green;
+    font-size: 20px;
+}
+
+.monstruo-card .card-header{
+    color: rgb(4, 147, 4);
+    background-color: rgb(47, 20, 49);
+    font-weight: 700;
+}
+
+.monstruo-texto {
+    flex-grow: 1; /* Hace que el texto ocupe todo el espacio disponible */
+}
+
+.monstruo-texto .icono {
+    width: 20px; /* Ajusta el ancho de la imagen según tus necesidades */   
+    margin-right: 10px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #1c0326f0;
+}
+
+#contenidofooter {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    height: 40px;
+    padding: 16px;
+    margin-top: 800px;
+}
+
+#contenidofooter a {
+    color: white;
+    font-weight: 600;
+}
+
+#logo-footer img {
+    width: 30px;
+    margin-right: 8px;
+    vertical-align: middle;
+    border-radius: 30px;
+}
+
+footer div a img {
+    width: 24px;
+    margin-left: 8px;
+}
+
+footer div iframe {
+    width: 140px;
+}
+
+footer p {
+    color: white;
+}

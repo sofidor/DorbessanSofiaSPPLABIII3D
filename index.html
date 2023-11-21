@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/jpg" href="img/calabaza.png">
+    <script src="./js/formulario.js" type="module" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <title>HALLOWEEN</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          
+          <a class="navbar-brand"  href="index.html">  <img src="img/calabaza.png" alt="logo" width="50px"> HALLOWEEN </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="monstruos.html">Monstruos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#blog">Blog</a>
+              </li>    
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>   
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="inicio" id="inicio">
+            <h1>Crud monstruos</h1>
+            <section id="formulario">
+                
+                <form id="monstruoForm">
+                    <label>Nombre:<input type="text" placeholder="Ingrese nombre:" name="nombre"></label>
+                    <span id="txtNombre"></span>
+                    
+                    <label>
+                        <img src="../img/monstruo.png" alt="Icono alias" class="iconoMiedo"> 
+                        Alias: 
+                    <input type="text" placeholder="Ingrese Alter-Ego:" name="alias"></label>                   
+                    <span id="txtAlias"></span>
+
+                    <fieldset id="radio">
+                        <legend><img src="../img/escudo-seguro.png" alt="Icono de Defensa" class="icono">Defensa:</legend>
+                
+                        <input type="radio" name="defensa" Value="Posion" checked>Posion
+                        <br>
+                        <input type="radio" name="defensa" Value="Crucifijo">Crucifijo
+                        <br>
+                        <input type="radio" name="defensa" Value="Estaca">Estaca
+                        <br>
+                        <input type="radio" name="defensa" Value="Plata">Plata
+                    </fieldset>
+                    <label>
+                        <img src="../img/fantasma (1).png" alt="Icono de miedo" class="iconoMiedo"> 
+                        Miedo:
+                        <input type="range" name="miedo" value="50" min="0" max="100" step="5">
+                    </label>
+                        <label for="selectMonstruos">
+                            <img src="../img/monstruo (2).png" alt="Icono de miedo" class="iconoMiedo"> 
+                            Tipo:
+                        </label>
+                        <select id="selectMonstruos" name="tipo"></select>                  
+        
+                    <button type="submit" class="btnLogo" onclick="">Guardar</button>
+                    <button type="button" class="btnLogo" id="eliminar" value="eliminar" style="display: none">Eliminar</button>
+                    <input type="hidden" name="txtId">
+                </form>
+            </section>
+        </section>        
+
+        <section id="filtroMonstruos">
+          <h2>Filtrar por Tipo</h2>       
+          <select id="selectFiltroTipo">
+          <option value="Todos">Todos</option>
+          <option value="Vampiro">Vampiro</option>
+          <option value="Hombre Lobo">Hombre Lobo</option>
+          <option value="Fantasma">Fantasma</option>
+          <option value="Esqueleto">Esqueleto</option>
+          <option value="Bruja">Bruja</option>
+          <option value="Zombie">Zombie</option>
+          </select>
+          <button id="btnFiltrar">Filtrar</button>
+      </section>
+
+      <label for="promedioMiedo" class="promedioMiedoLabel">Promedio Miedo:</label>
+      <input type="text" id="promedioMiedo" readonly>
+        
+      <section id="tablaPrueba"></section>    
+     
+    <div id="loader" style="display: none;">
+        <img src="../img/waiting-3.gif" alt="Cargando...">
+    </div>        
+
+    </main>
+    <footer>
+        <div id="contenidofooter">
+            <!-- logo footer -->
+            <a href="index.html" id="logo-footer">
+                <img src="img/calabaza.png" alt="Logo">
+                HALLOWEEN
+            </a>
+            <p class>Laboratorio III - 2023</p>
+            <div>
+
+                <a href="https://www.instagram.com/" target="_blank">
+                 <img src="img/instagram-w.png" alt="instagram">
+                </a>
+                <a href="https://chat.whatsapp.com/" target="_blank"> <!-- abre al whatsapp -->
+                  <img src="img/whatsapp.png" alt="logo whatsapp">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/formulario.js"></script>
+</body>
+</html>
